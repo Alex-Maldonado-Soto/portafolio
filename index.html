@@ -19,66 +19,76 @@
 }
 
 body {
-  background-color: #343434;
-  color: white;
+  color: #fff;
+  background-color: #fff;
 }
-
-
   .navbar-light .navbar-nav .nav-link:hover {
-    color: #ff6200;
-  }
-  .navbar-light .navbar-nav .nav-link {
-    color: white;
-}
-
-  .bg-orange{
-    color: #ff6200;
-  }
-  .bg-gray{
-    color: #343434;
-  }
-  .card {
-    background-blend-mode: darken;
-    height: 50vh;
-    background-size: cover;
-    justify-content: center;
-    background-color: rgba(70, 70, 70, 0.5);
-  }
-  .text-header {
-    text-align: center;
-    margin: auto;
+    background-color: #e1761d;
     color: #fff;
-    padding: auto;
+    font-size: 1.2em;
   }
+.navbar-light .navbar-nav .nav-link {
+    color: #fff;
+    margin: 0 20px;
+}
   .navbar-collapse {
     justify-content: flex-end;
   }
 
+  .bg-main{
+    background-color: #fff;
+    color:#000;
+  }
+
+  .main span{
+	color: #e1761d;
+}
+
+
+  .divider {
+	width: 400px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	padding: 5px ;
+	background:linear-gradient(10deg,#25f4e9,#0026e9);
+	border-radius: 20px;
+
+	
+}
+
+.header-content-right img {
+	background: #33E9BF;	
+	background:linear-gradient(10deg,#0026e9,#25f4e9);;
+	width: 400px;
+	height: 620px;
+	padding: 7px;
+	border-color: 7px solid #125a49;
+	border-radius: 12px 52px 22px 100px ;
+	margin-top: 126px;
+}
+
+
+  .bg-about {
+    background: #1d88e1;
+    color: #fff;
+  }
+
+  .btn:hover {
+    color: #1d88e1;
+  }
   .about-me {
     background-color: red;
     height: 100vh;
     overflow: hidden;
   }
-  #bg-empresa {
-    background-blend-mode: darken;
-    width: 100vw;
-    background-size: cover;
-    background-image: url(imagenes/pedro-lastra-Nyvq2juw4_o-unsplash.jpg);
-    justify-content: center;
-    background-color: rgba(70, 70, 70, 0.3);
-  }
 
   .navbar {
-    background-color: #343434;
+    background: #1d88e1;
   }
 
   .btn {
-    background-color: #ff6200;
+    background-color: #e1761d;
     color: #fff;
-  }
-  .progress-bar-striped {
-    background-image: linear-gradient(45deg,#ff6200 25%,transparent 25%,transparent 50%,#ff6200 50%, #ff6200 75%,transparent 75%,transparent);
-    background-size: 1rem 1rem;
   }
   .progress-bar {
     display: flex;
@@ -88,25 +98,72 @@ body {
     color: #fff;
     text-align: center;
     white-space: nowrap;
-    background-color: #be4a02;
+    background-color: #e1761d;
     transition: width .6s ease;
 }
   i{
-    color: #fff;
+    color: #1d88e1;
   }
   .circle {
-    color: #ff6200;
+    color: #e1761d;
   }
   .nav li a:hover {
-    color: #ff6200;
+    color: #25f4e9;
+
   }
   .fab, .fa-brands:hover {
-    color: #ff6200;
+    color: #e1761d;
 }
+
+.bg-fortalezas {
+  background-color: #fff;
+    color: #000;
+}
+
+.text {
+  color: #000;
+}
+
+footer {
+  background-color: #fff;
+}
+
+
+.bg-tecnologias {
+  background: #1d88e1;
+    color: #000;
+}
+
+.bg-proyectos {
+  background-color: #fff;
+    color: #000;
+}
+
+.h2-tecnologias {
+  padding-top: 10px;
+  color: #fff;
+}
+
+.row-right {
+  color: #e1761d;
+  background-color: #e1761d;
+}
+
+.carousel-control-next-icon {
+  background-color: #e1761d;
+  padding: 22px;
+}
+
+.carousel-control-prev-icon {
+  background-color: #e1761d;
+  padding: 22px;
+}
+
   </style>
 </head>
 
 <body>
+  
   <nav class="navbar navbar-expand-sm navbar-light fixed-top">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
@@ -126,6 +183,9 @@ body {
           <li class="nav-item">
             <a class="nav-link" href="#contactame">Contactame</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contactame">Blog</a>
+          </li>
         </ul>
       </div>
     </div>
@@ -133,22 +193,29 @@ body {
 
 
 
-
-  <section class="section 1">
-    <div class="header">
-      <div class="card" style="background-image: url(imagenes/roman-synkevych-UT8LMo-wlyk-unsplash.jpg);">
-        <div class="text-header align-items-center" id="text-header">
-          <h2>Proyecto animaciones</h2>
-          <p>En este proyecto experimentare con algunas animaciones de gsap</p>
-          <button type="button" class="btn">Repositorio</button>
+<section class="section 1">
+  <div class="container-xxl bg-main p-5">
+    <div class="row">
+      <div class="col-md-6 m-auto">
+        <h2 class="main">Hola!!<br>Soy<span> Alex Maldonado</span></h2>
+        <div class="divider"></div>
+        <h3 class="main-parraf mt-3">Web Developer</h3>
+        <p class="main-parraf-2">Soy un estudiante de secundaria aficionado al desarrollo web y a los deportes, me encuentro en una etapa muy temprena de mi carrera pero cada dia avanzo para ser un <b>full-stack Developer.</b></p>
+      </div>
+      <div class="col-md-6">
+        <div class="header-content-right">
+          <img src="imagenes/jurica-koletic-7YVZYZeITc8-unsplash.jpg" style="width: 80%; object-fit: cover; object-position: 50%;">
         </div>
       </div>
-    </div>
-    <a name="conoceme"></a>
-  </section>
+      </div>
+</section>
+
+
+
+<!--fin de section Main-->
 
 <section class="section 2">
-  <div class="container-xxl container-2 p-5">
+  <div class="container-xxl bg-about container-2 p-5">
     <div class="row">
       <div class="col-md-6">
         <div class="header-content-left">
@@ -156,35 +223,37 @@ body {
         </div>
       </div>
       <div class="col-md-6 m-auto mt-3">
-        <h2 class="about-me-animation">Nombre</h2>
-        <p class="about-me-animation">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus recusandae, autem dolore blanditiis officia praesentium, corrupti molestiae unde qui explicabo nesciunt pariatur amet ut debitis. Facilis officia vitae minus voluptatum!</p>
+        <h2 class="about-me-animation">Ahora hablando mas sobre mi pues...</h2>
+        <p class="about-me-animation"></p> Pratico badminton en la Federacion de Guatemala, soy miembro de un grupo llamado <b>OEG (olimpiadas especiales Guatemala)</b> que busca promover la inclusion y el deporte, y desde que gane una <b>beca en Platzi, estudio ahi programacion </b> y otras cosas como <b>ingles (Soy A2 y avanzando) </b> para mejorar en el area.<br><br> Me encanta tocar la guitarra, los deportes como badminton y futbol, programar y tener nuevas aventuras.<br><br></p>
         <div >
-          <span>Rama con experiencia</span>
+          <span>HTML 5</span>
           <div class="progress mt-2 mb-3">
-            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 95%"></div>
+            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 80%"></div>
           </div>
       
-          <span>Rama con experiencia</span>
+          <span>CSS 3</span>
           <div class="progress  mt-2 mb-3">
-            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 85%"></div>
+            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
           </div>
-          <span>Rama con experiencia</span>
+          <span>Javascript</span>
           <div class="progress  mt-2 mb-3">
-            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 100%"></div>
+            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 40%"></div>
           </div>
         </div>
-        <div class="button-contact mt-5">
+        <div class="button-contact mt-5 m-3">
           <a href="#contactame">
             <button type="button" class="btn">Contactame</button>
           </a>        
         </div>
       </div>
     </div>
+
   </div>
 </section>
 
-<section class="section 3">
-  <div class="container">
+<!--fin de section About-me-->
+
+  <div class="container-fluid bg-fortalezas my-5 p-5">
     <div class="row my-5">
       <div class="col-2">
         <i class="fa-solid fa-circle-check my-3 fs-1 circle"></i>
@@ -213,70 +282,282 @@ body {
       </div>
     </div>
   </div>
-</section>
 
-<section class="section">
-  <div class="container-lg p-5 mb-5" id="bg-empresa">
-    <div class="col-12 d-flex justify-content-center" style="color: white;">
-      <h2>Trabaje en estas empresas</h2>
-    </div>
-    <div class="row mt-3">
-      <div class="col-3 text-center la" style="color: white;">
-        <i class="fa-brands fa-google my-3 fs-1"></i>
-      </div>
-      <div class="col-3 text-center la"style="color: white;">
-        <i class="fa-brands fa-facebook my-3 fs-1"></i>
-      </div>
-      <div class="col-3 text-center "style="color: white;">
-        <i class="fa-brands fa-facebook-messenger my-3 fs-1"></i>
-      </div>
-      <div class="col-3 text-center la" style="color: white;">
-        <i class="fa-brands fa-twitter my-3 fs-1"></i>
-      </div>
-    </div>
-  </div>
-</section>
+<!--fin de section Fortalezas-->
 
-
-<section class="section-contact">
-<div class="container py-5">
-  <a name="contactame"></a>
-  <div class="text-center">
-    <a name="contacto" class="position-absolute top-1000 start-0 translate-middle"></a>
-    <h2>Contactame</h2>
-    <h4 class="py-4">Necesitas el servicio, manda tu mensaje</h4>
-  </div>
-  <form action="#" class="row justify-content-center">
-    <div class="form-group col-md-3">
-      <input type="text" placeholder="Nombre" class="form-control">
-    </div>
-    <div class="form-group col-md-3">
-      <input type="email" placeholder="E-mail" class="form-control">
-    </div>
-    <div class="form-group col-md-3">
-      <input type="text" placeholder="Telefono" class="form-control">
-    </div>
+  <div class="container-fluid bg-tecnologias my-5 pb-5">
     <div class="row">
-      <div class="mb-3">
-        <label for="exampleFormControlTextarea1" class="form-label"></label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      <h2 class="h2-tecnologias">Las tecnologias que utilizo</h2>
+      <div class="row">
+
+
+        <div class="col-md-4">
+          <div class="card m-auto mt-4" style="width: 18rem;">
+            <img src="imagenes/boxed-water-is-better-5Lw1U5BIumE-unsplash.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                      CSS
+                    </button>
+                  </h2>
+                  <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-4">
+          <div class="card m-auto mt-4" style="width: 18rem;">
+            <img src="imagenes/boxed-water-is-better-5Lw1U5BIumE-unsplash.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      HTML
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card m-auto mt-4" style="width: 18rem;">
+            <img src="imagenes/boxed-water-is-better-5Lw1U5BIumE-unsplash.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <!--los valores que hay que cambiar para colocar otro acordeon son data-bs-target="#collapseThree" id="headingThee"-->
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseTwo">
+                      Javascript
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>  
+
+      <!--fin de la primer linea de cartas y acordeones (Solo copiar la segunda y la tercera [la primera tiene codigo que no se deberia replicar])-->
+
+      <div class="row">
+
+
+        <div class="col-md-4">
+          <div class="card m-auto mt-4" style="width: 18rem;">
+            <img src="imagenes/boxed-water-is-better-5Lw1U5BIumE-unsplash.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseTwo">
+                      Bootstrap-5
+                    </button>
+                  </h2>
+                  <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card m-auto mt-4" style="width: 18rem;">
+            <img src="imagenes/boxed-water-is-better-5Lw1U5BIumE-unsplash.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingFive">
+                    <!--los valores que hay que cambiar para colocar otro acordeon son data-bs-target="#collapseThree" id="headingThee"-->
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseTwo">
+                      gsap
+                    </button>
+                  </h2>
+                  <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-4">
+          <div class="card m-auto mt-4" style="width: 18rem;">
+            <img src="imagenes/boxed-water-is-better-5Lw1U5BIumE-unsplash.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingSix">
+                    <!--los valores que hay que cambiar para colocar otro acordeon son data-bs-target="#collapseThree" id="headingThee"-->
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                      Git
+                    </button>
+                  </h2>
+                  <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>  
+
+      <!--fin de la segunda linea de cartas y acordeones-->
+
+
+      </div>  
+      </div>   
       </div>
     </div>
-    <div class="col-md-12 pt-5">
-      <div class="row justify-content-center">
-        <button class="btn col-md-12">Enviar</button>
+  </div>
+
+
+<!--Fin section Tecnologias-->
+<div id="carouselExampleControls" class="carousel slide my-5 bg-proyectos p-5" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="card m-auto mt-4" style="width: 50vw; height: 2wh;">
+        <img src="imagenes/boxed-water-is-better-5Lw1U5BIumE-unsplash.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingSlideOne">
+                <!--los valores que hay que cambiar para colocar otro acordeon son data-bs-target="#collapseThree" id="headingThee"-->
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSlideOne" aria-expanded="false" aria-controls="collapseSix">
+                  Git
+                </button>
+              </h2>
+              <div id="collapseSlideOne" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique, consequuntur?</p>
+                  <div class="button-contact">
+                    <a href="#Repositorio">
+                      <button type="button" class="btn">Repositorio</button>
+                    </a>        
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </form>
+
+
+    <div class="carousel-item">
+      <div class="card m-auto mt-4" style="width: 50vw; height: 2wh;">
+        <img src="imagenes/boxed-water-is-better-5Lw1U5BIumE-unsplash.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingSlideOne">
+                <!--los valores que hay que cambiar para colocar otro acordeon son data-bs-target="#collapseThree" id="headingThee"-->
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSlideOne" aria-expanded="false" aria-controls="collapseSix">
+                  Git
+                </button>
+              </h2>
+              <div id="collapseSlideOne" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique, consequuntur?</p>
+                  <div class="button-contact">
+                    <a href="#Repositorio">
+                      <button type="button" class="btn">Repositorio</button>
+                    </a>        
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="carousel-item">
+      <div class="card m-auto mt-4" style="width: 50vw; height: 2wh;">
+        <img src="imagenes/boxed-water-is-better-5Lw1U5BIumE-unsplash.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingSlideOne">
+                <!--los valores que hay que cambiar para colocar otro acordeon son data-bs-target="#collapseThree" id="headingThee"-->
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSlideOne" aria-expanded="false" aria-controls="collapseSix">
+                  Git
+                </button>
+              </h2>
+              <div id="collapseSlideOne" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique, consequuntur?</p>
+                  <div class="button-contact">
+                    <a href="#Repositorio">
+                      <button type="button" class="btn">Repositorio</button>
+                    </a>        
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" id="row-right" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
 </div>
-</section>
+
+
+<!--Fin section Proyectos-->
+
+
+
+
+
 
 <footer class="d-flex flex-wrap justify-content-between align-items-center pt-3 pb-0 my-4 border-top">
   <div class="col-md-4 d-flex align-items-center">
     <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
       <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
     </a>
-    <span class="text">Redes sociales del creador</span>
+    <span class="text">Mis redes sociales</span>
   </div>
 
   <ul class="nav col-md-4 justify-content-end list-unstyled d-flex pe-5 text-align-center">
@@ -287,11 +568,17 @@ body {
 </footer>
 
 
+
+
+
+
+
+<!--Inicio del js-->
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
 
   <script src="app.js"></script>
-
 
 
 <!--fin codigo js de gsap-->
