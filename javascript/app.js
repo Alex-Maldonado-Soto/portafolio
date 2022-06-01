@@ -141,7 +141,29 @@ gsap.to('#text-header', {
       });      
 
 
-    
+      gsap.from('.img-about', {
+        scrollTrigger: {
+          trigger: ".img-about",
+          toggleActions: "restart none restart none"
+        },
+          duration: 2,
+          x: 1000, //'random(-500,500)'
+          ease: 'elastic'
+          //  delay: 2 // it's better to use timeline
+      });      
+
+      gsap.from('.text-about', {
+        scrollTrigger: {
+          trigger: ".img-about",
+          toggleActions: "restart none restart none"
+        },
+          duration: 2,
+          x: -1000, //'random(-500,500)'
+          ease: 'elastic'
+          //  delay: 2 // it's better to use timeline
+      }); 
+
+
       // CONTROLS
 
       // document.querySelector('.play').onclick = () => tween.play();
