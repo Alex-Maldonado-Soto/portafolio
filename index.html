@@ -1,0 +1,569 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="font-awesome/css/all.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="icon" href="imagenes/programmer.png"></link>
+    <title>Portafolio desarrollador web</title>
+  </head>
+  <body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <style>
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #fff;
+  background-color: #fff;
+}
+
+#A-navbar {
+  font-weight: 600;
+  color: #fff;
+}
+
+#M-navbar {
+  font-weight: 600;
+  color: #e1761d;
+}
+  .navbar-light .navbar-nav .nav-link:hover {
+    background-color: #e1761d;
+    color: #fff;
+    font-size: 1.2em;
+  }
+.navbar-light .navbar-nav .nav-link {
+    color: #fff;
+    margin: 0 20px;
+}
+  .navbar-collapse {
+    justify-content: flex-end;
+  }
+
+ 
+
+  .main span{
+	color: #e1761d;
+}
+
+
+  .divider {
+	width: 400px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	padding: 5px ;
+	background:linear-gradient(10deg,#25f4e9,#0026e9);
+	border-radius: 20px;
+
+	
+}
+
+.header-content-right img {
+	background: #33E9BF;	
+	background:linear-gradient(10deg,#0026e9,#25f4e9);;
+	width: 400px;
+	height: 620px;
+	padding: 7px;
+	border-color: 7px solid #125a49;
+	border-radius: 12px 52px 22px 100px ;
+	margin-top: 126px;
+}
+
+
+  .bg-about {
+    background: #1d88e1;
+    color: #fff;
+  }
+
+  .btn:hover {
+    color: #1d88e1;
+  }
+  .about-me {
+    background-color: red;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .navbar {
+    background: #1d88e1;
+  }
+
+  .btn {
+    background-color: #e1761d;
+    color: #fff;
+  }
+  .progress-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #e1761d;
+    transition: width .6s ease;
+}
+  i{
+    color: #1d88e1;
+  }
+  .circle {
+    color: #e1761d;
+  }
+  .nav li a:hover {
+    color: #25f4e9;
+
+  }
+  .fab, .fa-brands:hover {
+    color: #e1761d;
+}
+
+.bg-fortalezas {
+  background-color: transparent;
+    color: #000;
+}
+
+.text {
+  color: #000;
+}
+
+footer {
+  background-color: transparent;
+}
+
+
+.bg-tecnologias {
+  background: #1d88e1;
+    color: #000;
+}
+
+.bg-proyectos {
+  background-color: transparent;
+    color: #000;
+}
+
+.h2-tecnologias {
+  padding-top: 10px;
+  color: #fff;
+}
+
+.row-right {
+  color: #e1761d;
+  background-color: #e1761d;
+}
+
+.carousel-control-next-icon {
+  background-color: #e1761d;
+  padding: 22px;
+}
+
+.carousel-control-prev-icon {
+  background-color: #e1761d;
+  padding: 22px;
+}
+
+ #bg-empresa {
+    background-blend-mode: darken;
+    width: 100vw;
+    background-color: #1d88e1;
+  }
+
+  #bg-empresa h5 {
+    text-align: center;
+    color: #fff;
+  } 
+
+  #particles-js {
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	z-index: -1;
+}
+
+
+.bg-main{
+    background-color: transparent;
+    color:#000;
+  }
+
+  .container {
+    background-color: transparent;
+  }
+
+  </style>
+</head>
+
+<body>
+  
+  <div id="particles-js"></div>
+
+  <nav class="navbar navbar-expand-sm navbar-light fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <h2 id="A-navbar">A<span id="M-navbar">M</span></h2>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav" id="nav">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Casa</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#conoceme">Conoceme</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#conocimientos">Conocimientos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#proyectos">Proyectos</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+
+<section class="section 1">
+  <div class="container-xxl bg-main p-5 mt-5">
+    <div class="row">
+      <div class="col-md-6 m-auto text-main">
+        <h2 class="main">Hola!!<br>Soy<span> Alex Maldonado</span></h2>
+        <div class="divider"></div>
+        <h3 class="main-parraf mt-3">Web Developer</h3>
+        <p class="main-parraf-2">Soy un estudiante de secundaria aficionado al desarrollo web y a los deportes, me encuentro en una etapa muy temprena de mi carrera pero cada dia avanzo para ser un <b>full-stack Developer.</b></p>
+      </div>
+      <div class="col-md-6">
+        <div class="header-content-right img-main">
+          <img src="imagenes/img-portada.jpg" style="width: 80%; object-fit: cover; object-position: 50%;">
+        </div>
+      </div>
+      </div>
+</section>
+
+
+
+<!--fin de section Main-->
+
+<section class="section 2">
+  <a name="conoceme"></a>
+  <div class="container-xxl bg-about container-2 p-5">
+    <div class="row img-about">
+      <div class="col-md-6">
+        <div class="header-content-left">
+          <img src="imagenes/img-conoceme.jpg" style="width: 100%; object-fit: cover; object-position: 50%;">
+        </div>
+      </div>
+      <div class="col-md-6 m-auto mt-3">
+        <h2 class="about-me-animation">Ahora hablando mas sobre mi pues...</h2>
+        <p class="about-me-animation text-about"></p> Pratico badminton en la Federacion de Guatemala, soy miembro de un grupo llamado <b>OEG (olimpiadas especiales Guatemala)</b> que busca promover la inclusion y el deporte, y desde que gane una <b>beca en Platzi, estudio ahi programacion </b> y otras cosas como <b>ingles (Soy A2 y avanzando) </b> para mejorar en el area.<br><br> Me encanta tocar la guitarra, los deportes como badminton y futbol, programar y tener nuevas aventuras.<br><br></p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!--fin de section About-me-->
+
+  <div class="container-fluid bg-fortalezas my-5 p-5">
+    <div class="row my-5">
+      <div class="col-2">
+        <i class="fa-solid fa-circle-check my-3 fs-1 circle"></i>
+      </div>
+      <div class="col-10">
+        <h2 class="h2-logros">Social</h2>
+        <span class="span-logros">Se me facilita mucho el relacionarme con personas y dar a dar mi opinio sobre muchos temas</span>
+      </div>
+    </div>
+    <div class="row my-5">
+      <div class="col-2">
+        <i class="fa-solid fa-circle-check my-3 fs-1 circle"></i>
+      </div>
+      <div class="col-10">
+        <h2 class="h2-logros">Organizado</h2>
+        <span class="span-logros">Acostumbro agendar todas mis actividades y trato de ser mas puntual</span>
+      </div>
+    </div>
+    <div class="row my-5">
+      <div class="col-2">
+        <i class="fa-solid fa-circle-check my-3 fs-1 circle"></i>
+      </div>
+      <div class="col-10">
+        <h2 class="h2-logros">Nunca paro de aprender</h2>
+        <span>Me mantengo aprendiendo todos los dias para mejorar mis habilidades tanto blandas como de desarrollo</span>
+      </div>
+    </div>
+  </div>
+
+<!--fin de section Fortalezas-->
+
+  <div class="container-fluid bg-tecnologias my-5 pb-5">
+    <a name="conocimientos"></a>
+    <div class="row">
+      <h2 class="h2-tecnologias">Las tecnologias que utilizo</h2>
+      <div class="row">
+
+
+        <div class="col-md-4">
+          <div class="card card-css m-auto mt-4" style="width: 18rem;">
+            <img src="imagenes/css.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <span>CSS</span>        
+              <div class="progress mt-2 mb-3">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 65%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-4">
+          <div class="card card-html m-auto mt-4" style="width: 18rem;">
+            <img src="imagenes/html.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <span>HTML</span>        
+              <div class="progress mt-2 mb-3">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 80%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card card-javascript m-auto mt-4" style="width: 18rem;">
+            <img src="imagenes/javascript.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <span>javascript</span>        
+              <div class="progress mt-2 mb-3">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 30%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>  
+
+      <!--fin de la primer linea de cartas y acordeones (Solo copiar la segunda y la tercera [la primera tiene codigo que no se deberia replicar])-->
+
+      <div class="row">
+
+
+        <div class="col-md-4">
+          <div class="card card-bootstrap m-auto mt-4" style="width: 18rem;">
+            <img src="imagenes/bootstrap.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                  <span>Bootstrap</span>        
+                      <div class="progress mt-2 mb-3">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 80%"></div>
+                      </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card card-gsap m-auto mt-4" style="width: 18rem;">
+            <img src="imagenes/gsap.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <span>gsap</span>        
+              <div class="progress mt-2 mb-3">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 10%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-4">
+          <div class="card card-git m-auto mt-4" style="width: 18rem;">
+            <img src="imagenes/git.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <span>git</span>        
+              <div class="progress mt-2 mb-3">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 70%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>  
+
+      <!--fin de la segunda linea de cartas y acordeones-->
+
+
+      </div>  
+      </div>   
+      </div>
+    </div>
+  </div>
+
+
+<!--Fin section Tecnologias-->
+<div id="carouselExampleControls" class="carousel slide my-5 bg-proyectos p-5" data-bs-ride="carousel">
+  <a name="proyectos"></a>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="card m-auto mt-4" style="width: 50vw; height: 2wh;">
+        <img src="imagenes/bootstrap-animation.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingSlideOne">
+                <!--los valores que hay que cambiar para colocar otro acordeon son data-bs-target="#collapseThree" id="headingThee"-->
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSlideOne" aria-expanded="false" aria-controls="collapseSix">
+                  Bootstrap-animation
+                </button>
+              </h2>
+              <div id="collapseSlideOne" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                 <p>Un proyecto en el que interiorise en bootstrap y use gsap con el plugin de scroll</p>
+                  <div class="button-contact">
+                    <a href="https://github.com/Alex-Maldonado-Soto/bootstrap-animation" target="_blanck">
+                      <button type="button" class="btn">Repositorio</button>
+                    </a>        
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="carousel-item">
+      <div class="card m-auto mt-4" style="width: 50vw; height: 2wh;">
+        <img src="imagenes/img-proyect-galery.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingSlideOne">
+                <!--los valores que hay que cambiar para colocar otro acordeon son data-bs-target="#collapseThree" id="headingThee"-->
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSlideOne" aria-expanded="false" aria-controls="collapseSix">
+                  Bootstrap-galery
+                </button>
+              </h2>
+              <div id="collapseSlideOne" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                 <p>mi primer proyecto con bootstrap</p>
+                  <div class="button-contact">
+                    <a href="https://github.com/Alex-Maldonado-Soto/proyect-bootstrap-galery" target="_blank">
+                      <button type="button" class="btn">Repositorio</button>
+                    </a>        
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="carousel-item">
+      <div class="card m-auto mt-4" style="width: 50vw; height: 2wh;">
+        <img src="imagenes/portafolio-plantilla.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingSlideOne">
+                <!--los valores que hay que cambiar para colocar otro acordeon son data-bs-target="#collapseThree" id="headingThee"-->
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSlideOne" aria-expanded="false" aria-controls="collapseSix">
+                  Portafolio-platilla
+                </button>
+              </h2>
+              <div id="collapseSlideOne" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                 <p>La primera version de mi portafolio en la que use solamente html, algunos bloques de codigo para hacer unas particulas y css puro</p>
+                  <div class="button-contact">
+                    <a href="https://github.com/Alex-Maldonado-Soto/portafolioPlatilla" target="_blanck">
+                      <button type="button" class="btn">Repositorio</button>
+                    </a>        
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" id="row-right" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+<!--Fin section Proyectos-->
+
+
+
+<section class="section">
+  <div class="container-fluid p-5 mb-5" id="bg-empresa">
+    <div class="col-12 d-flex justify-content-center" style="color: #fff;">
+      <h2>Puedes mandarme un mensaje</h2>
+    </div>
+        <div class="row mt-3">
+          <div class="col-12 d-flex juustify-content-center text-align-center " style="color: #fff;">
+                  <h5>Contactame directamente mandandome un mensaje a mi email <span style="color: #fff">alexandermaldonadosoto@gmail.com</span></h5>
+          </div>
+        </div>
+  </div>
+</section>
+
+
+
+<footer class="d-flex flex-wrap justify-content-between align-items-center pt-3 pb-0  my-4 border-top">
+  <div class="col-md-4 d-flex align-items-center">
+    <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+      <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+    </a>
+    <span class="text">Mis redes sociales</span>
+  </div>
+
+
+
+  <ul class="nav col-md-4 justify-content-end list-unstyled d-flex pe-5 text-align-center">
+    <li class="ms-3 fs-3 footer"><a class="text-muted pe-3" target="_blank" href="https://twitter.com/Maldexander"><i class="fa-brands fa-twitter"></i></a></li>
+    <li class="ms-3 fs-3 footer"><a class="text-muted pe-3" target="_blank" href="https://dev.to/alexmaldonadosoto"><i class="fa-brands fa-dev"></i></a></li>
+    <li class="ms-3 fs-3 footer"><a class="text-muted pe-3" target="_blank" href="https://github.com/Alex-Maldonado-Soto"><i class="fa-brands fa-github"></i></a></li>
+  </ul>
+</footer>
+
+
+
+
+
+
+
+<!--Inicio del js-->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+
+  <script src="javascript/app.js"></script>
+
+
+<!--fin codigo js de gsap-->
+
+		<!-- codigo de particulas-->
+    <script src="javascript/particlesmin.js"></script>
+    <script src="javascript/extension-particle.js"></script>
+    <!--fin codigo de particulas -->
+
+<!--Codigo bootstrap-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+</body>
+  </html> 
