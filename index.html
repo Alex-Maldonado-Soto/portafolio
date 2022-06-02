@@ -71,7 +71,6 @@ body {
 	padding: 7px;
 	border-color: 7px solid #125a49;
 	border-radius: 12px 52px 22px 100px ;
-	margin-top: 126px;
 }
 
 
@@ -194,6 +193,30 @@ footer {
     background-color: transparent;
   }
 
+.row-main {
+  height: 90vh;
+}
+
+@media only screen and (max-width: 500px)
+{
+    .header-content-right img {
+    height: 321px;
+    }
+    .bg-main {
+      text-align: center;
+    }
+
+    .divider{
+      width: 313px;
+    }
+}
+
+#bg-empresa {
+  text-align: center;
+}
+
+
+
   </style>
 </head>
 
@@ -233,14 +256,14 @@ footer {
 
 <section class="section 1">
   <div class="container-xxl bg-main p-5 mt-5">
-    <div class="row">
+    <div class="row row-main">
       <div class="col-md-6 m-auto text-main">
         <h2 class="main">Hola!!<br>Soy<span> Alex Maldonado</span></h2>
         <div class="divider"></div>
         <h3 class="main-parraf mt-3">Web Developer</h3>
         <p class="main-parraf-2">Soy un estudiante de secundaria aficionado al desarrollo web y a los deportes, me encuentro en una etapa muy temprena de mi carrera pero cada dia avanzo para ser un <b>full-stack Developer.</b></p>
       </div>
-      <div class="col-md-6">
+      <div class="col-md-6 m-auto">
         <div class="header-content-right img-main">
           <img src="imagenes/img-portada.jpg" style="width: 80%; object-fit: cover; object-position: 50%;">
         </div>
@@ -510,12 +533,12 @@ footer {
 
 
 <section class="section">
-  <div class="container-fluid p-5 mb-5" id="bg-empresa">
-    <div class="col-12 d-flex justify-content-center" style="color: #fff;">
-      <h2>Puedes mandarme un mensaje</h2>
+  <div class="container-fluid p-3 mb-5" id="bg-empresa">
+    <div class="col-12 text-align-center" style="color: #fff;">
+      <h2 id="h2-bg-empresa">Puedes mandarme un mensaje</h2>
     </div>
         <div class="row mt-3">
-          <div class="col-12 d-flex juustify-content-center text-align-center " style="color: #fff;">
+          <div class="col-12" style="color: #fff;">
                   <h5>Contactame directamente mandandome un mensaje a mi email <span style="color: #fff">alexandermaldonadosoto@gmail.com</span></h5>
           </div>
         </div>
