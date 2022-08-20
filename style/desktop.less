@@ -1,0 +1,47 @@
+@import "componentesLess/global.less";
+
+header {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+
+  h1 {
+    color: @colorTerciario;
+
+    span {
+      color: @colorSecundario;
+    }
+  }
+
+  .header__rowDown {
+    color: @colorTerciario;
+    font-size: 10rem;
+    font-weight: 900;
+    margin-top: 100px;
+    bottom: 50px;
+  }
+
+  ul {
+    display: flex;
+    list-style: none;
+    margin-bottom: 100px;
+
+    li {
+      font-size: 5rem;
+      margin: 10px 30px;
+
+      a {
+        i {
+          color: @colorTerciario;
+        }
+        i:hover {
+          color: @colorSecundario;
+        }
+      }
+    }
+  }
+}
