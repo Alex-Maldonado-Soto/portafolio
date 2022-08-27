@@ -11,7 +11,9 @@
   <body> 
     <main>
       <header> 
-        <h1>Soy<span>  Alex Maldonado</span></h1><span class="typed"> </span>
+        <div id="particles-js"></div>
+        <h1>Soy<span>  Alex Maldonado</span></h1>
+        <div> <span class="typed"> </span></div>
         <ul> 
           <li> <a href="#">
                <i class="fa-brands fa-square-twitter"></i></a></li>
@@ -24,13 +26,10 @@
         </ul><a href="#"> </a><i class="fa-regular fa-down-long header__rowDown fa-bounce"></i>
       </header>
       <nav> <span>MALDEXANDER</span>
-        <div> <a href="">Inicio </a><a href="">Portafolio</a><a href="">Sobre mi </a></div>
-      </nav>
-      <nav> <span>MALDEXANDER</span>
-        <div> <a href="">Inicio </a><a href="">Portafolio</a><a href="">Sobre mi </a></div>
+        <div class="navbar"><a href="">Inicio </a><a href="">Portafolio</a><a href="">Sobre mi </a></div>
       </nav>
       <section class="about">
-        <div><img src="" alt=""><a href=""></a>
+        <div class="about__profile"><img src="./sources/miPhoto.png" alt=""><a href="">alexandermaldonadosoto@gmail.com</a>
           <ul> 
             <li> <a href="#">
                  <i class="fa-brands fa-square-twitter"></i></a></li>
@@ -41,18 +40,31 @@
             <li><a href="#">
                  <i class="fa-brands fa-instagram"></i></a></li>
           </ul>
-          <div>
-            <h2> </h2>
-            <p> </p>
-            <h3> </h3>
-            <ul><img src="" alt=""><img src="" alt=""><img src="" alt=""><img src="" alt=""><img src="" alt=""><img src="" alt=""><img src="" alt=""><img src="" alt=""></ul>
+        </div>
+        <div class="about__text">
+          <h2>Sobre mi </h2>
+          <p> Soy un estudiante de secundaria apasionado al desarrollo web y a los deportes, me gusta tocar guitarra y jugar videojuegos en mi tiempos libres, haci como tambien escribo algunos post en dev community y soy voluntario en olimpiadas especiales en Guatemala</p>
+          <h3>Lenguajes</h3>
+          <div class="about__text--languaje"><i class="fa-brands fa-bootstrap"></i>
+<i class="fa-brands fa-js"></i>
+<i class="fa-brands fa-github"></i>
+<i class="fa-brands fa-git-alt"></i>
+<i class="fa-brands fa-less"></i>
+<i class="fa-brands fa-css3-alt"></i>
+<i class="fa-brands fa-html5"></i>
           </div>
         </div>
+      </section>
+      <section class="portafolio">
+        <h2>Portafolio </h2>
+        <arcticle class="portafolio__proyectos" id="proyectos"></arcticle>
       </section><!--Libreria para la animacion de texto-->
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 <!--Archivo de configuracion de javascript-->
       <script src="./js/main.js"> </script><!--Script de font awesome-->
 <script src="https://kit.fontawesome.com/23da889756.js" crossorigin="anonymous"></script>
+<!--Script de los proyectos-->
+      <script src="./js/proyectos.js"> </script>
     </main>
   </body>
 </html>
