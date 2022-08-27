@@ -7,7 +7,7 @@
 body {
   font-size: 62.5%;
   background-color: #050a30;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 h1 {
   font-size: 5.43rem;
@@ -19,6 +19,19 @@ h1 {
 .typed-cursor {
   font-size: 5rem;
   color: #fff;
+}
+.link-nav {
+  position: absolute;
+}
+.link-nav--header {
+  position: absolute;
+  top: 0;
+}
+.link-nav--about {
+  top: 100vh;
+}
+.link-nav--portafolio {
+  top: 191vh;
 }
 header {
   width: 100%;
@@ -132,6 +145,10 @@ nav .active {
   text-decoration: none;
   color: #000;
 }
+.about .about__profile a:nth-child(2):hover {
+  background-color: #e3b517;
+  color: #fff;
+}
 .about .about__profile ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -223,24 +240,6 @@ nav .active {
   text-align: center;
   color: #fff;
 }
-.portafolio ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  list-style: none;
-  gap: 30px;
-  text-align: center;
-  color: #fff;
-  font-size: 1.2rem;
-  margin-top: 20px;
-  font-weight: 400;
-}
 .portafolio .portafolio__proyectos {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -291,44 +290,4 @@ nav .active {
   color: #fff;
   background: #e3b517;
   padding: 10px 20px;
-}
-.portafolio .portafolio__proyectos .cardProyecto .cardProyecto__text--languaje {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: 1.5rem;
-  gap: 20px;
-  text-decoration: none;
-  list-style: none;
-}
-.portafolio .portafolio__proyectos .cardProyecto .about__text--languaje i:nth-child(1) {
-  color: #563c7c;
-}
-.portafolio .portafolio__proyectos .cardProyecto .about__text--languaje i:nth-child(2) {
-  color: #f7df1e;
-}
-.portafolio .portafolio__proyectos .cardProyecto .about__text--languaje i:nth-child(3) {
-  color: #333333;
-}
-.portafolio .portafolio__proyectos .cardProyecto .about__text--languaje i:nth-child(4) {
-  color: #f13c2e;
-}
-.portafolio .portafolio__proyectos .cardProyecto .about__text--languaje i:nth-child(5) {
-  color: #204674;
-}
-.portafolio .portafolio__proyectos .cardProyecto .about__text--languaje i:nth-child(6) {
-  color: #254ce5;
-}
-.portafolio .portafolio__proyectos .cardProyecto .about__text--languaje i:nth-child(7) {
-  color: #f16428;
 }
