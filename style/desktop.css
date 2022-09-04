@@ -12,14 +12,6 @@ body {
 h1 {
   font-size: 5.43rem;
 }
-.title--typed {
-  font-size: 4.17rem;
-  color: #fff;
-}
-.typed-cursor {
-  font-size: 5rem;
-  color: #fff;
-}
 .link-nav {
   position: absolute;
 }
@@ -57,6 +49,14 @@ header h1 {
 header h1 span {
   color: #e3b517;
 }
+header .title--typed {
+  font-size: 4.17rem;
+  color: #fff;
+}
+header .typed-cursor {
+  font-size: 5rem;
+  color: #fff;
+}
 header .header__rowDown {
   color: #fff;
   font-size: 10rem;
@@ -80,6 +80,10 @@ header ul li a i {
 }
 header ul li a i:hover {
   color: #e3b517;
+  -webkit-transform: rotateZ(360deg);
+          transform: rotateZ(360deg);
+  -webkit-transition-duration: 0.6s;
+          transition-duration: 0.6s;
 }
 nav {
   width: 100%;
@@ -100,8 +104,9 @@ nav {
 }
 nav span {
   color: #fff;
+  font-family: "Palanquin Dark", sans-serif;
   font-size: 1.8rem;
-  font-weight: 600;
+  font-weight: 700;
 }
 nav a {
   color: #fff;
@@ -154,7 +159,6 @@ nav .active {
   display: -ms-flexbox;
   display: flex;
   list-style: none;
-  margin-bottom: 100px;
 }
 .about .about__profile ul li {
   font-size: 4rem;
@@ -165,6 +169,10 @@ nav .active {
 }
 .about .about__profile ul li a i:hover {
   color: #e3b517;
+  -webkit-transform: rotateZ(360deg);
+          transform: rotateZ(360deg);
+  -webkit-transition-duration: 0.6s;
+          transition-duration: 0.6s;
 }
 .about .about__text {
   background-color: #fff;
@@ -290,4 +298,61 @@ nav .active {
   color: #fff;
   background: #e3b517;
   padding: 10px 20px;
+}
+@media (max-width: 1250px) {
+  .about .about__profile {
+    row-gap: 5%;
+  }
+  .about .about__profile a:nth-child(2) {
+    font-size: 0.7rem;
+    font-weight: 600;
+  }
+  .about .about__profile ul li {
+    font-size: 3rem;
+    margin: 5px 15px;
+  }
+  .about .about__text {
+    padding: 50px;
+    gap: 30px;
+  }
+  .about .about__text h2 {
+    font-size: 3.2rem;
+  }
+  .about .about__text p {
+    font-size: 1.2rem;
+  }
+  .about .about__text h3 {
+    font-size: 2.2rem;
+  }
+  .about .about__text .about__text--languaje {
+    font-size: 3rem;
+    gap: 20px;
+  }
+  nav {
+    padding: 10px 50px;
+  }
+  header h1 {
+    font-size: 4.43rem;
+    padding: 0 50px;
+  }
+  header h1 span {
+    color: #e3b517;
+  }
+  header ul {
+    margin-bottom: 0;
+  }
+  header ul li {
+    font-size: 4rem;
+  }
+  header .header__rowDown {
+    font-size: 8rem;
+  }
+  header .title--typed {
+    font-size: 3.17rem;
+    color: #fff;
+  }
+  header .typed-cursor {
+    font-size: 4rem;
+    color: #fff;
+  }
 }

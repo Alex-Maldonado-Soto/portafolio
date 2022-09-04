@@ -17,17 +17,6 @@ header {
     }
   }
 
-  .title--typed {
-    font-size: 4.17rem;
-    color: @colorTerciario;
-  }
-  
-  .typed-cursor {
-    font-size: 5rem;
-    color: @colorTerciario;
-  }
-  
-
   .header__rowDown {
     color: @colorTerciario;
     font-size: 10rem;
@@ -52,7 +41,7 @@ header {
         i:hover {
           color: @colorSecundario;
           transform: rotateZ(360deg);
-          transition-duration: 0.6s;
+          transition-duration: .6s;
         }
       }
     }
@@ -72,7 +61,7 @@ nav {
 
   span {
     color: @colorTerciario;
-    font-family: "Palanquin Dark", sans-serif;
+    font-family: 'Palanquin Dark', sans-serif;
     font-size: 1.8rem;
     font-weight: 700;
   }
@@ -127,6 +116,7 @@ nav {
     ul {
       display: flex;
       list-style: none;
+      margin-bottom: 100px;
 
       li {
         font-size: 4rem;
@@ -139,7 +129,7 @@ nav {
           i:hover {
             color: @colorSecundario;
             transform: rotateZ(360deg);
-            transition-duration: 0.6s;
+            transition-duration: .6s;
           }
         }
       }
@@ -202,6 +192,7 @@ nav {
 }
 
 .portafolio {
+
   width: 100%;
 
   h2 {
@@ -251,86 +242,7 @@ nav {
         background: #e3b517;
         padding: 10px 20px;
       }
+
     }
-  }
-}
-
-@media (max-width: 1250px) {
-  .about {
-    .about__profile {
-      row-gap: 5%;
-
-      a:nth-child(2) {
-        font-size: 0.7rem;
-        font-weight: 600;
-      }
-
-      ul {
-        li {
-          font-size: 3rem;
-          margin: 5px 15px;
-        }
-      }
-    }
-
-    .about__text {
-      padding: 50px;
-      gap: 30px;
-
-      h2 {
-        font-size: 3.2rem;
-      }
-
-      p {
-        font-size: 1.2rem;
-      }
-
-      h3 {
-        font-size: 2.2rem;
-      }
-
-      .about__text--languaje {
-        font-size: 3rem;
-        gap: 20px;
-      }
-    }
-  }
-
-  nav {
-    padding: 10px 50px;
-  }
-
-  header {
-    h1 {
-      font-size: 4.43rem;
-      padding: 0 50px;
-
-      span {
-        color: @colorSecundario;
-      }
-    }
-
-    ul {
-      margin-bottom: 0;
-
-      li {
-        font-size: 4rem;
-      }
-    }
-
-    .header__rowDown {
-      font-size: 8rem;
-    }
-
-    .title--typed {
-      font-size: 3.17rem;
-      color: @colorTerciario;
-    }
-    
-    .typed-cursor {
-      font-size: 4rem;
-      color: @colorTerciario;
-    }
-    
   }
 }
