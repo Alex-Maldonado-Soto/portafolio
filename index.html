@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style/desktop.css"><link rel="preconnect" href="https://fonts.googleapis.com">
-  </head><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./style/componentesLess/desktop.css" media="(min-width: 768px)">
+    <link rel="stylesheet" href="./style/componentescss/mobile.css" media="(max-width: 767px)"><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Palanquin+Dark:wght@700&display=swap" rel="stylesheet">
-  <title>Maldexander</title>
+    <title>Maldexander</title>
+  </head>
   <body> 
     <main>
       <header> <a class="link-nav link-nav--header" name="header"></a>
@@ -26,8 +28,9 @@
                <i class="fa-brands fa-instagram"></i></a></li>
         </ul><i class="fa-regular fa-down-long header__rowDown fa-bounce"></i>
       </header>
-      <nav> <span class="logo">MALDEXANDER</span>
-        <div class="navbar"><a href="#header">Inicio </a><a href="#about">Sobre mi </a><a href="#portafolio">Portafolio</a></div>
+      <div id="div"></div>
+      <nav> <span class="logo">MALDEXANDER</span><i class="fa-solid fa-bars menu" onclick="navbar()"></i>
+        <div class="navbar" id="navbar"><i class="fa-solid fa-xmark" onclick="navbarReverse()"></i><a href="#header" onclick="navbarReverse()">Inicio </a><a href="#about" onclick="navbarReverse()">Sobre mi </a><a href="#portafolio" onclick="navbarReverse()">Portafolio</a></div>
       </nav>
       <section class="about"><a class="link-nav link-nav--about" name="about"> </a>
         <div class="about__profile"><img src="./sources/miPhoto.png" alt=""><a href="mailto:alexandermaldonadosoto@gmail.com">alexandermaldonadosoto@gmail.com</a>
@@ -59,7 +62,10 @@
       <section class="portafolio"><a class="link-nav link-nav--portafolio" name="portafolio"></a>
         <h2>Portafolio </h2>
         <arcticle class="portafolio__proyectos" id="proyectos"></arcticle>
-      </section><!--Libreria para la animacion de texto-->
+      </section><!--Script del gsap-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+<!--Script del navbar-->
+      <script src="./js/navbar.js"> </script><!--Libreria para la animacion de texto-->
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 <!--Archivo de configuracion de javascript-->
       <script src="./js/main.js"> </script><!--Script de font awesome-->

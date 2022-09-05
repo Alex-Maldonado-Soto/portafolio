@@ -1,6 +1,9 @@
+#div
 nav 
     span.logo MALDEXANDER
-    div.navbar
-        a(href="#header") Inicio 
-        a(href="#about") Sobre mi 
-        a(href="#portafolio") Portafolio
+    i(onclick="navbar()").fa-solid.fa-bars.menu
+    div.navbar#navbar
+        i(onclick="navbarReverse()").fa-solid.fa-xmark
+        a(href="#header", onclick="navbarReverse()") Inicio 
+        a(href="#about", onclick="navbarReverse()") Sobre mi 
+        a(href="#portafolio", onclick="navbarReverse()") Portafolio
