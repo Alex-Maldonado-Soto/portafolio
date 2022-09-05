@@ -1,6 +1,3 @@
-@color-primario = #050a30;
-@color-secundario = #e3b517;
-@blanco = #fff;
 * {
   margin: 0;
   padding: 0;
@@ -9,10 +6,22 @@
 }
 body {
   font-size: 62.5%;
+  background-color: #050a30;
+  font-family: "Montserrat", sans-serif;
 }
 h1 {
   font-size: 5.43rem;
 }
-h2 {
-  font-size: 4.17rem;
+.link-nav {
+  position: absolute;
+}
+.link-nav--header {
+  position: absolute;
+  top: 0;
+}
+.link-nav--about {
+  top: 100%;
+}
+.link-nav--Portafolio {
+  top: 240%;
 }

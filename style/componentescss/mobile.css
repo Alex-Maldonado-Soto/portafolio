@@ -20,7 +20,13 @@ h1 {
   top: 0;
 }
 .link-nav--about {
-  top: 100vh;
+  top: 100%;
+}
+.link-nav--Portafolio {
+  top: 240%;
+}
+.link-nav--about {
+  top: 90%;
 }
 .link-nav--portafolio {
   top: 191vh;
