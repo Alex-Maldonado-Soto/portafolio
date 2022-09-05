@@ -106,7 +106,7 @@ nav {
 nav span {
   color: #fff;
   font-family: "Palanquin Dark", sans-serif;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-weight: 700;
 }
 nav i {
@@ -156,20 +156,21 @@ nav a {
 nav a:hover,
 nav .active {
   background-color: #e3b517;
+  color: #050a30;
 }
 .about {
   width: 100%;
   min-height: 80vh;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1.5fr 2fr;
-  grid-template-columns: 1.5fr 2fr;
-  grid-auto-rows: 100%;
+  -ms-grid-columns: 100%;
+  grid-template-columns: 100%;
+  grid-auto-rows: 1.5fr 2fr;
 }
 .about .about__profile {
   display: -ms-grid;
   display: grid;
-  row-gap: 76px;
+  row-gap: 5%;
   justify-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -231,13 +232,13 @@ nav .active {
           justify-content: flex-start;
 }
 .about .about__text h2 {
-  font-size: 4.2rem;
+  font-size: 3.2rem;
 }
 .about .about__text p {
-  font-size: 1.6rem;
+  font-size: 1.2rem;
 }
 .about .about__text h3 {
-  font-size: 3.2rem;
+  font-size: 2.2rem;
 }
 .about .about__text .about__text--languaje {
   width: 100%;
@@ -253,8 +254,8 @@ nav .active {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 5rem;
-  gap: 30px;
+  font-size: 3rem;
+  gap: 20px;
 }
 .about .about__text .about__text--languaje i:nth-child(1) {
   color: #563c7c;
@@ -282,7 +283,7 @@ nav .active {
 }
 .portafolio h2 {
   margin-top: 100px;
-  font-size: 4rem;
+  font-size: 3rem;
   text-align: center;
   color: #fff;
 }
@@ -306,8 +307,8 @@ nav .active {
   gap: 50px;
 }
 .portafolio .portafolio__proyectos .cardProyecto {
-  width: 360px;
-  height: 382px;
+  width: 320px;
+  height: 400px;
   background: #fff;
   border-radius: 10px;
   padding: 40px;
@@ -336,4 +337,38 @@ nav .active {
   color: #fff;
   background: #e3b517;
   padding: 10px 20px;
+}
+@media (max-width: 500px) {
+  header h1 {
+    color: #fff;
+    font-size: 2.5rem;
+  }
+  .about .about__profile {
+    row-gap: 5%;
+  }
+  .about .about__profile a:nth-child(2) {
+    font-size: 0.6rem;
+    font-weight: 600;
+  }
+  .about .about__profile ul li {
+    font-size: 3rem;
+    margin: 5px 15px;
+  }
+  .about .about__text {
+    padding: 50px;
+    gap: 30px;
+  }
+  .about .about__text h2 {
+    font-size: 3rem;
+  }
+  .about .about__text p {
+    font-size: 1rem;
+  }
+  .about .about__text h3 {
+    font-size: 2rem;
+  }
+  .about .about__text .about__text--languaje {
+    font-size: 3rem;
+    gap: 20px;
+  }
 }

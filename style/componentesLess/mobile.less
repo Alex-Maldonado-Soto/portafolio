@@ -27,12 +27,11 @@ header {
     font-size: 2.15rem;
     color: @colorTerciario;
   }
-  
+
   .typed-cursor {
     font-size: 2.15rem;
     color: @colorTerciario;
   }
-  
 
   .header__rowDown {
     color: @colorTerciario;
@@ -79,13 +78,13 @@ nav {
   span {
     color: @colorTerciario;
     font-family: "Palanquin Dark", sans-serif;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: 700;
   }
 
   i {
-      font-size: 3rem;
-      color: @colorTerciario;
+    font-size: 3rem;
+    color: @colorTerciario;
   }
 
   .navbar {
@@ -109,7 +108,6 @@ nav {
       margin-right: 10vw;
       position: fixed;
     }
-
   }
 
   a {
@@ -126,6 +124,7 @@ nav {
   a:hover,
   .active {
     background-color: @colorSecundario;
+    color: @colorPrimario;
   }
 }
 
@@ -133,12 +132,12 @@ nav {
   width: 100%;
   min-height: 80vh;
   display: grid;
-  grid-template-columns: 1.5fr 2fr;
-  grid-auto-rows: 100%;
+  grid-template-columns: 100%;
+  grid-auto-rows: 1.5fr 2fr;
 
   .about__profile {
     display: grid;
-    row-gap: 76px;
+    row-gap: 5%;
     justify-items: center;
     -webkit-box-align: center;
     align-items: center;
@@ -194,15 +193,15 @@ nav {
     justify-content: flex-start;
 
     h2 {
-      font-size: 4.2rem;
+      font-size: 3.2rem;
     }
 
     p {
-      font-size: 1.6rem;
+      font-size: 1.2rem;
     }
 
     h3 {
-      font-size: 3.2rem;
+      font-size: 2.2rem;
     }
 
     .about__text--languaje {
@@ -211,8 +210,8 @@ nav {
       flex-wrap: wrap;
       flex-direction: row;
       align-items: center;
-      font-size: 5rem;
-      gap: 30px;
+      font-size: 3rem;
+      gap: 20px;
     }
 
     .about__text--languaje i:nth-child(1) {
@@ -244,7 +243,7 @@ nav {
 
   h2 {
     margin-top: 100px;
-    font-size: 4rem;
+    font-size: 3rem;
     text-align: center;
     color: @colorTerciario;
   }
@@ -260,8 +259,8 @@ nav {
     gap: 50px;
 
     .cardProyecto {
-      width: 360px;
-      height: 382px;
+      width: 320px;
+      height: 400px;
       background: #fff;
       border-radius: 10px;
       padding: 40px;
@@ -288,6 +287,55 @@ nav {
         color: #fff;
         background: #e3b517;
         padding: 10px 20px;
+      }
+    }
+  }
+}
+
+//responsive del about
+
+@media (max-width: 500px) {
+  header h1 {
+    color: #fff;
+    font-size: 2.5rem;
+  }
+
+  .about {
+    .about__profile {
+      row-gap: 5%;
+
+      a:nth-child(2) {
+        font-size: 0.6rem;
+        font-weight: 600;
+      }
+
+      ul {
+        li {
+          font-size: 3rem;
+          margin: 5px 15px;
+        }
+      }
+    }
+
+    .about__text {
+      padding: 50px;
+      gap: 30px;
+
+      h2 {
+        font-size: 3rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+
+      h3 {
+        font-size: 2rem;
+      }
+
+      .about__text--languaje {
+        font-size: 3rem;
+        gap: 20px;
       }
     }
   }
