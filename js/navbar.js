@@ -18,3 +18,5 @@ function navbarReverse() {
   document.querySelector("#div").style.backgroundColor = "transparent";
   navBar.classList.remove('navbar--show');
 }
+
+
